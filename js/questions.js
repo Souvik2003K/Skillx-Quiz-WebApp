@@ -109,6 +109,65 @@ let questions = [
       "const",
       "static"
     ]
+  },
+  {
+    numb: 11,
+    question: "Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?",
+    answer: "Apple",
+    options: [
+      "Commodore",
+      "Apple",
+      "Microsoft",
+      "Atari"
+    ]
+  },
+
+{
+    numb: 12,
+    question: "What does CPU stand for?",
+    answer: "Central Processing Unit",
+    options: [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Process Unit",
+      "Central Processor Unit"
+    ]
+  },
+
+{
+    numb: 13,
+    question: "If you were to code software in this language you'd only be able to type 0's and 1's",
+    answer: "Binary",
+    options: [
+      "JavaScript",
+      "Binary",
+      "Python",
+      "C++"
+    ]
+  },
+
+{
+    numb: 14,
+    question: "When Gmail first launched, how much storage did it provide for your email?",
+    answer: "1GB",
+    options: [
+      "5GB",
+      "Unlimited",
+      "512MB",
+      "1GB"
+    ]
+  },
+
+{
+    numb: 15,
+    question: "TThe programming language 'Swift' was created to replace what other programming language?",
+    answer: "Objective-C",
+    options: [
+      "Objective-C",
+      "C#",
+      "Ruby",
+      "C++"
+    ]
   }
   // you can uncomment the below codes and make duplicate as more as you want to add question
   // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....

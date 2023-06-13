@@ -8,12 +8,17 @@
 }
 
 body{
-    background: #007bff;
+    overflow: hidden;
+}
+
+body .bg{
+    height: 100vh;
+    width: 100vw;  
 }
 
 ::selection{
-    color: #fff;
-    background: #007bff;
+    color: #040404;
+    background: #ffffff;
 }
 
 .start_btn,
@@ -40,18 +45,20 @@ body{
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
-    color: #007bff;
+    color: #ffffff;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #fff;
+    background-color: #1B1A17;
+    /* background: rgb(0, 0, 0); */
+    background-color: #1B1A17;
     cursor: pointer;
 }
 
 .info_box{
     width: 540px;
-    background: #fff;
+    background-color: #1B1A17;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
@@ -62,13 +69,19 @@ body{
 .info_box .info-title{
     height: 60px;
     width: 100%;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid rgb(255, 255, 255);
     display: flex;
     align-items: center;
     padding: 0 30px;
     border-radius: 5px 5px 0 0;
     font-size: 20px;
     font-weight: 600;
+    justify-content: center;
+}
+
+.info_box .info-title span{
+    font-size: 17px;
+    color: #ffffff;
 }
 
 .info_box .info-list{
@@ -78,11 +91,12 @@ body{
 .info_box .info-list .info{
     margin: 5px 0;
     font-size: 17px;
+    color: #ffffff;
 }
 
 .info_box .info-list .info span{
     font-weight: 600;
-    color: #007bff;
+    color: #ffffff;
 }
 .info_box .buttons{
     height: 60px;
@@ -90,7 +104,7 @@ body{
     align-items: center;
     justify-content: flex-end;
     padding: 0 30px;
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid rgb(255, 255, 255);
 }
 
 .info_box .buttons button{
@@ -103,7 +117,7 @@ body{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid #000000;
     transition: all 0.3s ease;
 }
 
@@ -122,23 +136,25 @@ body{
     z-index: 2;
     height: 70px;
     padding: 0 30px;
-    background: #fff;
+    background-color: #1B1A17;
     border-radius: 5px 5px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .quiz_box header .title{
     font-size: 20px;
     font-weight: 600;
+    color: #ffffff;
 }
 
 .quiz_box header .timer{
-    color: #004085;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #ffffff;
     height: 45px;
     padding: 0 8px;
     border-radius: 5px;
@@ -170,20 +186,21 @@ body{
 
 .quiz_box header .time_line{
     position: absolute;
-    bottom: 0px;
+    bottom: -3px;
     left: 0px;
-    height: 3px;
+    height: 5px;
     background: #007bff;
 }
 
 section{
     padding: 25px 30px 20px 30px;
-    background: #fff;
+    background-color: #1B1A17;
 }
 
 section .que_text{
     font-size: 25px;
     font-weight: 600;
+    color: #ffffff;
 }
 
 section .option_list{
@@ -193,7 +210,6 @@ section .option_list{
 
 section .option_list .option{
     background: aliceblue;
-    border: 1px solid #84c5fe;
     border-radius: 5px;
     padding: 8px 15px;
     font-size: 17px;
@@ -210,21 +226,19 @@ section .option_list .option:last-child{
 }
 
 section .option_list .option:hover{
-    color: #004085;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
+    color: #000000;
+    background: #85f4fe;
+    border: none;
 }
 
 section .option_list .option.correct{
-    color: #155724;
-    background: #d4edda;
-    border: 1px solid #c3e6cb;
+    color: #ffffff;
+    background: #00a764;
 }
 
 section .option_list .option.incorrect{
-    color: #721c24;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
+    color: #ffffff;
+    background: #fb0217;
 }
 
 section .option_list .option.disabled{
@@ -261,11 +275,13 @@ footer{
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid lightgrey;
+    background-color: #000000;
 }
 
 footer .total_que span{
     display: flex;
     user-select: none;
+    color: white;
 }
 
 footer .total_que span p{
@@ -307,7 +323,7 @@ footer button.show{
 }
 
 .result_box{
-    background: #fff;
+    background-color: #1B1A17;
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
@@ -323,13 +339,14 @@ footer button.show{
 
 .result_box .icon{
     font-size: 100px;
-    color: #007bff;
+    color: #ffee00;
     margin-bottom: 10px;
 }
 
 .result_box .complete_text{
     font-size: 20px;
     font-weight: 500;
+    color: #fff;
 }
 
 .result_box .score_text span{
@@ -337,6 +354,7 @@ footer button.show{
     margin: 10px 0;
     font-size: 18px;
     font-weight: 500;
+    color: #fff;
 }
 
 .result_box .score_text span p{
@@ -359,17 +377,17 @@ footer button.show{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
     transition: all 0.3s ease;
 }
 
 .buttons button.continue{
-    color: #fff;
-    background: #007bff;
+    color: black;
+    background: #85f4fe;
+    
 }
 
 .buttons button.continue:hover{
-    background: #0263ca;
+    background: #bef36e;
 }
 
 .buttons button.restart{
@@ -382,11 +400,11 @@ footer button.show{
 }
 
 .buttons button.quit{
-    color: #007bff;
+    color: black;
     background: #fff;
 }
 
 .buttons button.quit:hover{
-    color: #fff;
-    background: #007bff;
+    color: black;
+    background: #ffee00;
 }
