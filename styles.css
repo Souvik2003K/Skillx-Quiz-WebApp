@@ -8,9 +8,12 @@
 }
 
 body{
-    background-image: url("https://cdn.wallpapersafari.com/35/93/u6rge5.jpg");
+    overflow: hidden;
+}
+
+body .bg{
     height: 100vh;
-    background-size: cover;
+    width: 100vw;  
 }
 
 ::selection{
