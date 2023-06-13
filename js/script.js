@@ -46,7 +46,6 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 
 // if restartQuiz button clicked
 restart_quiz.onclick = ()=>{
-    console.log("its the 2nd time");
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
     timeValue = 15; 
@@ -158,7 +157,6 @@ function optionSelected(answer){
     for(i=0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
-    console.log(option_list.children[0]);
     next_btn.classList.add("show"); //show the next button if user selected any option
 }
 
